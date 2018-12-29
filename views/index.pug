@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome
+  form(method="POST" enctype="multipart/form-data" action="monupload")
+   input(type="file" name="monupload" multiple)
+   button(type='submit') Send
+
